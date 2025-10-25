@@ -1,0 +1,4 @@
+theme: minima
+title: "Sentiment analysis"
+author: "Rennze"
+description: "Discovering patterns of bias in news articles"
