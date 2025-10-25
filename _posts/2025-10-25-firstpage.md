@@ -2,7 +2,22 @@
 title: "Exploring-Sentiment-Patterns-In-News-Articles"
 date: 2025-10-25
 ---
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis eros id massa porttitor maximus in at arcu. Sed aliquam lobortis magna sit amet ornare. Phasellus bibendum sapien a rhoncus fringilla. Aliquam non quam quis justo sodales varius. Mauris convallis turpis ut ex interdum vehicula. Nullam cursus aliquet nunc, at pulvinar massa. Suspendisse venenatis urna metus, non porttitor sapien auctor at. Maecenas et placerat ante. Fusce lobortis tellus nec eros blandit, at aliquet dolor pellentesque. Vivamus tristique nisi id sem finibus aliquam non eu mauris. Duis lobortis risus pellentesque est imperdiet ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+## Overview
+
+In this analysis, we explored sentiment patterns consisting of emotion scores and emotional intensity in news articles.
+
+### Datasets
+
+We used 4 news datasets in our analysis, for a total of over 1000000 articles analysed
+
+### Method 
+
+We applied the `michellejieli/emotion_text_classifier` model from HuggingFace to classify emotions
+
+### Results:
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis eros id massa porttitor maximus in at arcu. Sed aliquam lobortis magna sit amet ornare. Phasellus bibendum sapien a rhoncus fringilla. Aliquam non quam quis justo sodales varius. Mauris convallis turpis ut ex interdum vehicula. Nullam cursus aliquet nunc, at pulvinar massa. Suspendisse venenatis urna metus, non porttitor sapien auctor at. Maecenas et placerat ante. Fusce lobortis tellus nec eros blandit, at aliquet dolor pellentesque. Vivamus tristique nisi id sem finibus aliquam non eu mauris. Duis lobortis risus pellentesque est imperdiet ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 Phasellus pellentesque bibendum ornare. Suspendisse finibus sapien et magna hendrerit facilisis. Donec luctus rhoncus tellus, vitae tristique elit maximus non. Donec semper facilisis odio, vel cursus arcu venenatis quis. Morbi ultrices quam nec condimentum vestibulum. Maecenas ornare leo ut eros porta, id porttitor arcu auctor. Sed quis libero non metus aliquet suscipit sit amet non urna. Cras euismod purus a lectus tempor ornare. Duis dictum lorem in bibendum dapibus. Pellentesque ex mi, sollicitudin eget ligula ut, ullamcorper commodo tellus. Nunc erat nisl, gravida nec dui in, laoreet porta nunc. Donec nec metus sit amet sem mattis lacinia et vitae libero.
 
