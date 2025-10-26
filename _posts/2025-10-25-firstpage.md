@@ -4,7 +4,14 @@ date: 2025-10-25
 ---
 ## Overview
 
-In this analysis, we explored sentiment patterns consisting of emotion scores and emotional intensity in news articles.
+Do patterns of news content vary for different groups? Does the sentiment and language used differ significantly across different groups? If so, how can we detect and understand these patterns? How can we identify the groups that might be vulnerable to negative reporting? 
+
+We explored sentiment and content word patterns across different news articles to see if any significant differences exist. 
+
+### Groups Analyzed
+In particular, for our analysis, we wanted to identify potentially vulnerable and less vulnerable groups. For this purpose, our analysis is based on World Bank Income Data of 2024, which categorizes countries into four income levels: low, lower middle, upper middle, and high. 
+
+With our results, you can see how sentiment and content words used in news articles vary for these groups. 
 
 ### Datasets
 
@@ -16,11 +23,14 @@ We applied the `michellejieli/emotion_text_classifier` model from HuggingFace to
 
 ### Results:
 
+#### How does sentiment vary across groups? 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis eros id massa porttitor maximus in at arcu. Sed aliquam lobortis magna sit amet ornare. Phasellus bibendum sapien a rhoncus fringilla. Aliquam non quam quis justo sodales varius. Mauris convallis turpis ut ex interdum vehicula. Nullam cursus aliquet nunc, at pulvinar massa. Suspendisse venenatis urna metus, non porttitor sapien auctor at. Maecenas et placerat ante. Fusce lobortis tellus nec eros blandit, at aliquet dolor pellentesque. Vivamus tristique nisi id sem finibus aliquam non eu mauris. Duis lobortis risus pellentesque est imperdiet ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+The graphs show the emotion labels across different groups. As evident, an overwhelming majority is neutral. Moreoever, no group has a significantly higher proportion of 'negative' or 'positive emotion associated with it, indicating that sentiment is not discriminatory across the groups we chose. 
 
-Phasellus pellentesque bibendum ornare. Suspendisse finibus sapien et magna hendrerit facilisis. Donec luctus rhoncus tellus, vitae tristique elit maximus non. Donec semper facilisis odio, vel cursus arcu venenatis quis. Morbi ultrices quam nec condimentum vestibulum. Maecenas ornare leo ut eros porta, id porttitor arcu auctor. Sed quis libero non metus aliquet suscipit sit amet non urna. Cras euismod purus a lectus tempor ornare. Duis dictum lorem in bibendum dapibus. Pellentesque ex mi, sollicitudin eget ligula ut, ullamcorper commodo tellus. Nunc erat nisl, gravida nec dui in, laoreet porta nunc. Donec nec metus sit amet sem mattis lacinia et vitae libero.
+However, a deeper analysis at entity level shows that some entities have an overall negative score associated with them. 
 
-Sed efficitur orci nisi, condimentum tempus orci varius a. Phasellus posuere enim eu posuere consequat. Fusce fringilla arcu id consequat placerat. Suspendisse neque massa, malesuada a luctus at, finibus ut urna. Curabitur pretium purus sit amet nulla gravida consequat. Aenean eget vulputate arcu. Vestibulum vitae condimentum sapien. Aenean in imperdiet leo, molestie tincidunt massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ac malesuada lacus, nec consectetur sapien. Morbi eu malesuada turpis, cursus lobortis tortor. Nulla convallis felis eget ligula gravida condimentum. Nulla nunc sem, cursus vel elit nec, ornare pellentesque augue. Maecenas sed congue mi, eget vestibulum quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum sed molestie justo, et efficitur erat.
+#### How does the content vary across groups? 
 
-Sed id massa justo. Morbi vel accumsan lorem, vel interdum odio. Aenean ac cursus eros, vitae gravida enim. Donec in tortor purus. Nam tincidunt purus blandit odio porttitor malesuada. Integer volutpat suscipit est ac pharetra. Aenean sed nisi eget erat condimentum efficitur at sed lectus. Etiam tincidunt iaculis nibh, vitae porta metus tristique eget. Sed varius lorem id lacus consectetur sollicitudin. Nulla placerat dolor nec maximus blandit. 
+We visualized the words and phrases uniquely associated with each group. 
+
+As you can see, there is a clear difference in the content that is discussed for higher income countries and lower income countries. 
