@@ -28,7 +28,12 @@ We applied the `michellejieli/emotion_text_classifier` model from HuggingFace to
 The graphs show the emotion labels across different groups. As evident, an overwhelming majority is neutral. Moreoever, no group has a significantly higher proportion of 'negative' or 'positive emotion associated with it, indicating that sentiment is not discriminatory across the groups we chose. 
 
 
-![Emotion Distribution across Groups](/assets/images/emotion_distribution_by_group.png)
+![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/emotion_distribution_by_group.png)
+
+For the Huffpost dataset, we observe a similar pattern:
+
+
+![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/hp_emotion_distribution_by_income.png)
 
 However, a deeper analysis at entity level shows that some entities have an overall negative score associated with them. 
 
@@ -36,12 +41,12 @@ However, a deeper analysis at entity level shows that some entities have an over
 
 We visualized the words and phrases uniquely associated with each group. 
 
-![High Income Countries: Top Words](/assets/images/high-income-word-cloud.png)
-![Upper Middle Income Countries: Top Words](/assets/images/u-middle-word-cloud.png)
-![Lower Middle Income Countries: Top Words](/assets/images/l-middle-word-cloud.png)
-![Low Income Countries: Top Words](/assets/images/low-income-word-cloud.png)
+![High Income Countries: Top Words]({{ site.baseurl }}/assets/images/high-income-word-cloud.png)
+![Upper Middle Income Countries: Top Words]({{ site.baseurl }}/assets/images/u-middle-word-cloud.png)
+![Lower Middle Income Countries: Top Words]({{ site.baseurl }}/assets/images/l-middle-word-cloud.png)
+![Low Income Countries: Top Words]({{ site.baseurl }}/assets/images/low-income-word-cloud.png)
 
 As you can see, there is a clear difference in the content that is discussed for higher income countries and lower income countries. 
 
-For the Huffpost dataset, we obtained similar results:
+
 
