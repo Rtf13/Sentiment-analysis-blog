@@ -1,4 +1,5 @@
 theme: minima
 title: "Sentiment analysis"
-author: "Rennze"
+author: "Aleena Ahmad, Rennze Fabe, Leevi Takala"
 description: "Discovering patterns of bias in news articles"
+baseurl: "/Sentiment-analysis-blog"

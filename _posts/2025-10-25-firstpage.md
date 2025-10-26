@@ -42,3 +42,6 @@ We visualized the words and phrases uniquely associated with each group.
 ![Low Income Countries: Top Words](/assets/images/low-income-word-cloud.png)
 
 As you can see, there is a clear difference in the content that is discussed for higher income countries and lower income countries. 
+
+For the Huffpost dataset, we obtained similar results:
+
