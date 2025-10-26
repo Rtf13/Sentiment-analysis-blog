@@ -27,6 +27,9 @@ We applied the `michellejieli/emotion_text_classifier` model from HuggingFace to
 
 The graphs show the emotion labels across different groups. As evident, an overwhelming majority is neutral. Moreoever, no group has a significantly higher proportion of 'negative' or 'positive emotion associated with it, indicating that sentiment is not discriminatory across the groups we chose. 
 
+
+![Emotion Distribution across Groups](/assets/images/emotion_distribution_by_group.png)
+
 However, a deeper analysis at entity level shows that some entities have an overall negative score associated with them. 
 
 #### How does the content vary across groups? 
