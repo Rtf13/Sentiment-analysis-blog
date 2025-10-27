@@ -36,8 +36,6 @@ For the Huffpost dataset, we observe a similar pattern:
 
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/hp_emotion_distribution_by_income.png)
 
-However, a deeper analysis at entity level shows that some entities have an overall negative score associated with them. 
-
 #### How does the content vary across groups? 
 
 Besides sentiment, we wanted to see what words and phrases were commonly used in relation with entities. The word clouds below visualize the top 50 words and phrases uniquely associated with each group. 
