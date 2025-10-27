@@ -39,6 +39,7 @@ However, a deeper analysis at entity level shows that some entities have an over
 
 Besides sentiment, we wanted to see what words and phrases were commonly used in relation with entities. The word clouds below visualize the top 50 words and phrases uniquely associated with each group. 
 
+
 <div class="image-grid">
   <div>
     <img src="{{ site.baseurl }}/assets/images/high-income-word-cloud-2.png" alt="High Income">
@@ -49,13 +50,15 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
     <p><strong>Upper Middle Income</strong></p>
   </div>
   <div>
-    <img src="{{ site.baseurl }}/assets/imagesl-middle-word-cloud-2.png" alt="Lower Middle Income">
+    <img src="{{ site.baseurl }}/assets/images/l-middle-word-cloud-2.png" alt="Lower Middle Income">
     <p><strong>Lower Middle Income</strong></p>
   </div>
   <div>
     <img src="{{ site.baseurl }}/assets/images/low-income-word-cloud-2.png" alt="Low Income">
     <p><strong>Low Income</strong></p>
   </div>
+</div>
+
 
 As we move from higher to lower income countries, there is a shift in the content being discussed. 
 * The phrases for higher income countries cover a wide range of topics, from climate change, mental health, sports, social media, to some social issues of illness and death.
