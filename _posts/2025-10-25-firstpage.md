@@ -28,14 +28,16 @@ Our analysis then focuses on the mention of these income groups and entities bel
 
 Data was analyzed in two datasets, the first (Dataset 1) contained news articles from multiples sources, such as BBC and Times of India. The second (Dataset 2) contained news articles from Huffington Post. From our data, we found the emotions associated with each article and used these to find emotions most commonly associated with each entity and income group. The graphs show the emotion labels across different groups. 
 
-##### Dataset 1
+<h3>Emotion distribution by Income Group: Dataset 1 </h3>
+
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/emotion_distribution_by_group.png)
 
 As evident, an overwhelming majority is neutral. Moreoever, no group has a significantly higher proportion of 'negative' or 'positive emotion associated with it, indicating that sentiment is not discriminatory across the groups we chose, for our chosen news sources.
 
 For the Huffington Post dataset, we observe a similar pattern:
 
-##### Dataset 2
+<h3>Emotion distribution by Income Group: Dataset 2 </h3>
+
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/hp_emotion_distribution_by_income.png)
 
 #### How does the content vary across groups? 
@@ -43,7 +45,7 @@ For the Huffington Post dataset, we observe a similar pattern:
 Besides sentiment, we wanted to see what words and phrases were commonly used in relation with entities. The word clouds below visualize the top 50 words and phrases uniquely associated with each group. 
 
 
-<h2>Word Clouds by Income Group: Dataset 1 </h2>
+<h3>Word Clouds by Income Group: Dataset 1 </h3>
 
 <div class="image-grid">
   <div>
@@ -66,7 +68,7 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
 
 
 
-<h2>Word Clouds by Income Group: Dataset 2 </h2>
+<h3>Word Clouds by Income Group: Dataset 2 </h3>
 
 <div class="image-grid">
   <div>
