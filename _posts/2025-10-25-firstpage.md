@@ -2,6 +2,9 @@
 title: "Exploring sentiment and content patterns in news articles"
 date: 2025-10-25
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
 ## Overview
 
 News content and the way it is presented can impact public opinions. This is especially important when news discusses groups or communities that are unfamiliar to readers and/or potentially vulnerable.  
