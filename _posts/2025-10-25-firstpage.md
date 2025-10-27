@@ -49,7 +49,7 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
     <p><strong>Upper Middle Income</strong></p>
   </div>
   <div>
-    <img src="{{ site.baseurl }}/assets/images/assets/images/l-middle-word-cloud-2.png" alt="Lower Middle Income">
+    <img src="{{ site.baseurl }}/assets/imagesl-middle-word-cloud-2.png" alt="Lower Middle Income">
     <p><strong>Lower Middle Income</strong></p>
   </div>
   <div>
