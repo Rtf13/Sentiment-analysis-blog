@@ -26,14 +26,16 @@ Our analysis then focuses on the mention of these income groups and entities bel
 
 #### How does sentiment vary across groups? 
 
-From our data, we found the emotions associated with each article and used these to find emotions most commonly associated with each entity and income group. The graphs show the emotion labels across different groups. 
+Data was analyzed in two datasets, the first (Dataset 1) contained news articles from multiples sources, such as BBC and Times of India. The second (Dataset 2) contained news articles from Huffington Post. From our data, we found the emotions associated with each article and used these to find emotions most commonly associated with each entity and income group. The graphs show the emotion labels across different groups. 
 
+##### Dataset 1
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/emotion_distribution_by_group.png)
 
 As evident, an overwhelming majority is neutral. Moreoever, no group has a significantly higher proportion of 'negative' or 'positive emotion associated with it, indicating that sentiment is not discriminatory across the groups we chose, for our chosen news sources.
 
-For the Huffpost dataset, we observe a similar pattern:
+For the Huffington Post dataset, we observe a similar pattern:
 
+##### Dataset 2
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/hp_emotion_distribution_by_income.png)
 
 However, a deeper analysis at entity level shows that some entities have an overall negative score associated with them. 
@@ -42,6 +44,8 @@ However, a deeper analysis at entity level shows that some entities have an over
 
 Besides sentiment, we wanted to see what words and phrases were commonly used in relation with entities. The word clouds below visualize the top 50 words and phrases uniquely associated with each group. 
 
+
+<h2>Word Clouds by Income Group: Dataset 1 </h2>
 
 <div class="image-grid">
   <div>
@@ -63,7 +67,30 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
 </div>
 
 
-As we move from higher to lower income countries, there is a shift in the content being discussed. 
+
+<h2>Word Clouds by Income Group: Dataset 2 </h2>
+
+<div class="image-grid">
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/hp_high_income_wc_btgram.png" alt="High Income">
+    <p><strong>High Income</strong></p>
+  </div>
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/hp_uppermid_income_wc_btgram.png" alt="Upper Middle Income">
+    <p><strong>Upper Middle Income</strong></p>
+  </div>
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/hp_lowmid_income_wc_btgram.png" alt="Lower Middle Income">
+    <p><strong>Lower Middle Income</strong></p>
+  </div>
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/hp_low_income_wc_btgram.png" alt="Low Income">
+    <p><strong>Low Income</strong></p>
+  </div>
+</div>
+
+
+Once again, we observe a similar pattern in both datasets. As we move from higher to lower income countries, there is a shift in the content being discussed. 
 * The phrases for higher income countries cover a wide range of topics, from climate change, mental health, sports, social media, to some social issues of illness and death.
 * For lower income countries, the phrases overwhelmingly concern topics like war, crises, coups, violence, death, etc. In fact, it is difficult to find words that are neutral or positive.
 
