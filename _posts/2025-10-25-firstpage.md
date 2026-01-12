@@ -49,19 +49,19 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
 
 <div class="image-grid">
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/high-income-word-cloud-2.png" alt="High Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/high-income-word-cloud-2.png" alt="High Income">
     <p><strong>High Income</strong></p>
   </div>
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/u-middle-word-cloud-2.png" alt="Upper Middle Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/u-middle-word-cloud-2.png" alt="Upper Middle Income">
     <p><strong>Upper Middle Income</strong></p>
   </div>
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/l-middle-word-cloud-2.png" alt="Lower Middle Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/l-middle-word-cloud-2.png" alt="Lower Middle Income">
     <p><strong>Lower Middle Income</strong></p>
   </div>
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/low-income-word-cloud-2.png" alt="Low Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/low-income-word-cloud-2.png" alt="Low Income">
     <p><strong>Low Income</strong></p>
   </div>
 </div>
@@ -72,19 +72,19 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
 
 <div class="image-grid">
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/high-income-word-cloud.png" alt="High Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/high-income-word-cloud.png" alt="High Income">
     <p><strong>High Income</strong></p>
   </div>
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/u-middle-word-cloud.png" alt="Upper Middle Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/u-middle-word-cloud.png" alt="Upper Middle Income">
     <p><strong>Upper Middle Income</strong></p>
   </div>
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/l-middle-word-cloud.png" alt="Lower Middle Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/l-middle-word-cloud.png" alt="Lower Middle Income">
     <p><strong>Lower Middle Income</strong></p>
   </div>
   <div>
-    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/low-income-word-cloud.png" alt="Low Income">
+    <img src="https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/low-income-word-cloud.png" alt="Low Income">
     <p><strong>Low Income</strong></p>
   </div>
 </div>
