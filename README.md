@@ -1,51 +1,139 @@
 ---
-title: "Exploring sentiment and content patterns in news articles"
+title: "Exploring Sentiment and Content Patterns in News Articles"
 date: 2025-10-25
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-## Overview
+## Project Overview
 
-News content and the way it is presented can impact public opinions. This is especially important when news discusses groups or communities that are unfamiliar to readers and/or potentially vulnerable.  
+News media plays a significant role in shaping public perception, particularly when reporting on countries or communities that readers may be unfamiliar with. This project explores whether **systematic differences** exist in the *sentiment* and *language* used when news articles mention different groups of people.
 
-This raises the questions: 
-*  **are there any noticeable patterns in how news content is written when discussing different groups?**
-*  **Does the sentiment, language used, or content differ significantly across groups?**
-  
-If so, **can we detect and understand these patterns?** Can **we identify the groups that might be vulnerable to harmful patterns?** 
+Rather than focusing on individual bias labels (which are difficult to define and annotate), we adopted a **data-driven linguistic analysis** approach to examine:
 
-For this purpose, we explored sentiment and content words across various news articles taken from popular sources like **BBC, Huffington Post, Times of India, etc.**  
+- How sentiment and emotion vary across groups
+- What topics and phrases are most commonly associated with those groups
+- Whether potentially vulnerable groups are disproportionately linked to negative content
 
-### Groups Analyzed
-First, we wanted to identify potentially vulnerable groups. To derive this from a standardized measure, we used the [World Bank Income Classification Data of 2024](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups), which categorizes countries into four income levels: low, lower middle, upper middle, and high. Here, we would consider countries with lower income levels to be more 'vulnerable' than higher inocme countries.
+---
 
-Our analysis then focuses on the mention of these income groups and entities belonging to these income groups.
+## Research Questions
 
-### Results:
+This project is guided by the following questions:
 
-#### How does sentiment vary across groups? 
+- **Do news articles use different sentiment or emotional framing when discussing different groups?**
+- **Does the content (topics and phrases) vary systematically across groups?**
+- **Can these patterns be detected using NLP techniques such as Named Entity Recognition and sentiment analysis?**
 
-Data was analyzed in two datasets, the first (Dataset 1) contained news articles from multiples sources, such as BBC and Times of India. The second (Dataset 2) contained news articles from Huffington Post. From our data, we found the emotions associated with each article and used these to find emotions most commonly associated with each entity and income group. The graphs show the emotion labels across different groups. 
+---
 
-<h3>Emotion distribution by Income Group: Dataset 1 </h3>
+## Defining Groups
+
+Identifying “vulnerable groups” directly from text is challenging and subjective. Instead, we use an **external, standardized proxy**:
+
+### World Bank Income Classification (2024)
+
+Countries are grouped into four income levels:
+- **Low income**
+- **Lower-middle income**
+- **Upper-middle income**
+- **High income**
+
+We assume that countries in lower income groups may be *more vulnerable* to harmful or sensationalized framing, and we analyze whether this is reflected in news language.
+
+All entities extracted from news headlines are mapped to these income groups based on country-level information.
+
+---
+
+## Datasets
+
+We combine multiple large-scale news datasets to maximize coverage:
+
+| Dataset        | Articles |
+|---------------|----------|
+| Global News   | 933,257  |
+| Huffington Post | 209,527 |
+| Webhose       | 100,476  |
+| BBC           | 42,329   |
+
+Due to missing article bodies and the infeasibility of large-scale scraping, **our analysis is performed on news headlines only**.
+
+---
+
+## Data Preprocessing
+
+The following preprocessing steps were applied:
+
+- Removed duplicate headlines
+- Dropped articles with missing titles
+- Filtered out non-English headlines using character-based heuristics
+- Converted text to lowercase and removed punctuation
+- Retained only relevant fields (headline, date, category)
+
+For the Webhose dataset, thousands of JSON files were converted into a unified CSV format.
+
+---
+
+## Methodology
+
+Since the data does **not contain labels** such as “biased” or “unbiased”, we do not train a supervised model. Instead, we extract and analyze **linguistic features**.
+
+### 1. Named Entity Recognition (NER)
+
+We use **spaCy’s `en_core_web_trf` transformer-based model** to extract entities from headlines.
+
+From the available entity labels, we focus on:
+- **GPE** (countries, cities)
+- **NORP** (nationalities, religious or political groups)
+- **PERSON**
+
+Entities are mapped to income groups using World Bank country classifications.
+
+---
+
+### 2️. Emotion Classification
+
+To go beyond simple positive/negative sentiment, we apply a **pretrained emotion classifier** from HuggingFace.
+
+Each headline is assigned an emotion label (e.g., neutral, fear, anger, joy), and emotion distributions are aggregated by income group.
+
+---
+
+### 3. Content Analysis (Words & Phrases)
+
+To understand *what* is being discussed:
+
+- Stopwords are removed
+- Place names are excluded to avoid trivial correlations
+- We extract **unigrams, bigrams, and trigrams**
+- **TF–IDF weighting** is applied to highlight phrases that are uniquely associated with each income group
+
+The results are visualized using word clouds.
+
+---
+
+## Results
+
+### Emotion Distribution by Income Group (Dataset 1)
 
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/emotion_distribution_by_group.png)
 
-As evident, an overwhelming majority is neutral. Moreoever, no group has a significantly higher proportion of 'negative' or 'positive emotion associated with it, indicating that sentiment is not discriminatory across the groups we chose, for our chosen news sources.
+Across all income groups, the majority of headlines are classified as **neutral**.  
+No group shows a disproportionately high level of negative emotion.
 
-For the Huffington Post dataset, we observe a similar pattern:
+---
 
-<h3>Emotion distribution by Income Group: Dataset 2 </h3>
+### Emotion Distribution by Income Group (Dataset 2 – Huffington Post)
 
 ![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/hp_emotion_distribution_by_income.png)
 
-#### How does the content vary across groups? 
+The same pattern holds for the Huffington Post dataset, suggesting that **sentiment alone does not indicate discriminatory framing** for the groups analyzed.
 
-Besides sentiment, we wanted to see what words and phrases were commonly used in relation with entities. The word clouds below visualize the top 50 words and phrases uniquely associated with each group. 
+---
 
+## Content Differences Across Groups
 
-<h3>Word Clouds by Income Group: Dataset 1 </h3>
+### Word Clouds by Income Group: Dataset 1
 
 <div class="image-grid">
   <div>
@@ -66,9 +154,9 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
   </div>
 </div>
 
+---
 
-
-<h3>Word Clouds by Income Group: Dataset 2 </h3>
+### Word Clouds by Income Group: Dataset 2
 
 <div class="image-grid">
   <div>
@@ -89,11 +177,36 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
   </div>
 </div>
 
+---
 
-Once again, we observe a similar pattern in both datasets. As we move from higher to lower income countries, there is a shift in the content being discussed. 
-* The phrases for higher income countries cover a wide range of topics, from climate change, mental health, sports, social media, to some social issues of illness and death.
-* For lower income countries, the phrases overwhelmingly concern topics like war, crises, coups, violence, death, etc. In fact, it is difficult to find words that are neutral or positive.
+### Interpretation
 
- While this difference in content words alone does not suggest a conscious effort by news media to negatively frame certain groups, it does show that negative topics are more commonly associated with lower income countries. While it can be argued that this stems from these crises and violence being prevalent for lower income countries, it still creates two entirely different images in readers mind regarding these groups. 
+While sentiment remains largely neutral across all groups, **content differences are substantial**:
 
+- **High-income countries** are associated with diverse topics such as:
+  - Climate change
+  - Mental health
+  - Sports
+  - Social media
+- **Lower-income countries** are predominantly linked to:
+  - War and conflict
+  - Crises and coups
+  - Violence and death
 
+This does not necessarily imply intentional bias, but it highlights how **repeated exposure to different topic associations can shape public perception**.
+
+---
+
+## Limitations
+
+- Analysis is based on **headlines only**, not full articles
+- No ground-truth labels for bias or framing
+- Emotion classifier is pretrained and not domain-specific
+- Income group is a coarse proxy for vulnerability
+
+---
+## Authors
+
+- Leevi Takala  
+- Aleena Ahmad  
+- Rennze Fabe
