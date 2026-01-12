@@ -116,7 +116,7 @@ The results are visualized using word clouds.
 
 ### Emotion Distribution by Income Group (Dataset 1)
 
-![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/emotion_distribution_by_group.png)
+![Emotion Distribution across Groups](https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/emotion_distribution_by_group.png)
 
 Across all income groups, the majority of headlines are classified as **neutral**.  
 No group shows a disproportionately high level of negative emotion.
@@ -125,7 +125,7 @@ No group shows a disproportionately high level of negative emotion.
 
 ### Emotion Distribution by Income Group (Dataset 2 – Huffington Post)
 
-![Emotion Distribution across Groups]({{ site.baseurl }}/assets/images/hp_emotion_distribution_by_income.png)
+![Emotion Distribution across Groups](https://raw.githubusercontent.com/Rtf13/Sentiment-analysis-blog/main/assets/images/hp_emotion_distribution_by_income.png)
 
 The same pattern holds for the Huffington Post dataset, suggesting that **sentiment alone does not indicate discriminatory framing** for the groups analyzed.
 
