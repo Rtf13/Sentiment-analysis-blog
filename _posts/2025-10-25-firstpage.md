@@ -72,19 +72,19 @@ Besides sentiment, we wanted to see what words and phrases were commonly used in
 
 <div class="image-grid">
   <div>
-    <img src="{{ site.baseurl }}/assets/images/hp_high_income_wc_btgram.png" alt="High Income">
+    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/hp_high_income_wc_btgram.png" alt="High Income">
     <p><strong>High Income</strong></p>
   </div>
   <div>
-    <img src="{{ site.baseurl }}/assets/images/hp_uppermid_income_wc_btgram.png" alt="Upper Middle Income">
+    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/hp_uppermid_income_wc_btgram.png" alt="Upper Middle Income">
     <p><strong>Upper Middle Income</strong></p>
   </div>
   <div>
-    <img src="{{ site.baseurl }}/assets/images/hp_lowmid_income_wc_btgram.png" alt="Lower Middle Income">
+    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/hp_lowmid_income_wc_btgram.png" alt="Lower Middle Income">
     <p><strong>Lower Middle Income</strong></p>
   </div>
   <div>
-    <img src="{{ site.baseurl }}/assets/images/hp_low_income_wc_btgram.png" alt="Low Income">
+    <img src="https://github.com/Rtf13/Sentiment-analysis-blog/tree/main/assets/images/hp_low_income_wc_btgram.png" alt="Low Income">
     <p><strong>Low Income</strong></p>
   </div>
 </div>
